@@ -1,6 +1,5 @@
 import { PortafolioService, Proyecto } from "./portafolioService.js";
 
-// Una sola instancia del servicio para toda la página
 const portafolio = new PortafolioService();
 
 const formulario = document.getElementById('formProyecto');

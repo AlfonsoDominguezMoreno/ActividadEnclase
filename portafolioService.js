@@ -46,5 +46,10 @@ export class PortafolioService {
          var index = this.proyectos.findIndex(p => p.id == proyectoId);
          this.proyectos[index] = {...this.proyectos[index], ...superProyecto}
     }
-
+    
+    eliminarProyecto(proyectoId){
+    var index = this.proyectos.findIndex(p => p.id == proyectoId);
+    if (index === -1) return;
+    this.proyectos.splice(index, 1);
+}
 }
